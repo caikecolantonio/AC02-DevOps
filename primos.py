@@ -16,15 +16,21 @@ def programa ():
 
 
     i=1
+    s=''
     cont =0
     while True:
         primo(i)
         i+=1
+        
         if cont == 101:
             break
         if primo(i) == True:
             cont+=1
-            return i
+            s+=str(i) + ', '
+            
+    return (s [0:len(s)-2])
+
+    print(programa())
             
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
