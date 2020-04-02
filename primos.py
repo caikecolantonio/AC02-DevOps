@@ -22,7 +22,7 @@ def programa ():
         primo(i)
         i+=1
         
-        if cont == 101:
+        if cont == 100:
             break
         if primo(i) == True:
             cont+=1
